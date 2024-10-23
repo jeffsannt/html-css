@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+
+<body>
+    <h1>Usando links Externos</h1>
+
+    <p>Você pode clicar aqui e <a href="https://www.sanntjoias.com.br" target="_blank" rel="external">acessar o meu
+            site</a> e será redirecionado para uma nova aba no navegador</p>
+
+    <!--Usando a "target="_black" você direciona o link para uma nova pagina na web-->
+    <!-- Usar rel="external para informar ao mecanismo de buscar que essa é uma pagina externa
+    Assim como deve utilizar rel="next" para informar a proxima pagina ou 
+    rel="prev" para informar a pagina anterior -->
+    <p>Caso você click aqui <a href="https://www.sanntjoias.com.br" rel="next" target="_self"> www.sanntjoias.com.br</a>
+        você ira acessar o site na mesma aba</p>
+
+    <h1>Usando links internos</h1>
+
+    <p>Uma outra alternativa é você navegar pelos documentos <a href="pagina002.html" rel="next" target="_self">Clicando
+            aqui você irá para a próxima pagina deste doc</a></p>
+
+    <h1>Link para Download</h1>
+<ul>
+    <li><a href="livro/envios03-10.pdf" download="envios03-10.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+    <li><a href="livro/envios03-10.zip" download="envios03-10" type="application/zip">Baixar o livro em ZIP</a></li>
+</ul>
+</body>
+
+</html>
