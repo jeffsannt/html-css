@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário</title>
+</head>
+<!-- O "for" que está dentro de label será sempre relacionado ao "id" do input -->
+
+<body>
+    <h1>Exemplo de Formulário com radio e checkbox</h1>
+    <form action="cadastro.php">
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="ismasc" value="M"> <label for="ismasc">Masculino</label><br>
+            <input type="radio" name="sexo" id="isfem" value="F"> <label for="isfem"> Feminino</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes</legend>
+
+            <input type="checkbox" name="fut" id="ifut" value="vfut"> <label for="ifut"> Futebol</label><br>
+            <input type="checkbox" name="basq" id="ibasq" value="vbasq"> <label for="ibasq"> Basquete</label><br>
+            <input type="checkbox" name="volei" id="ivolei" value="vvolei"> <label for="ivolei">Volei</label><br>
+            <input type="checkbox" name="tenis" id="itenis" value="vtenis"> <label for="itenis">Tenis</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    <div>
+        <h1>Exemplo com as tegs, select, datalist e textarea.</h1>
+        <form action="cadastro.php">
+            <p>
+                <label for="iest">Estado</label>
+                <select name="estado" id="iest">
+
+                    <optgroup label="Região Sudeste">
+                        <option value="" selected>---Escolha ---</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nodeste">
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernanbuco</option>
+                    </optgroup>
+                </select>
+            </p>
+            <label for="iptof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" required>
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+
+            </datalist>
+
+
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </div>
+</form>
+</body>
+
+</html>
