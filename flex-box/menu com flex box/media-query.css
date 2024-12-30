@@ -1,0 +1,26 @@
+@media only screen and (max-width: 580px) {
+   
+    header{
+        display: flex;
+    }
+   
+    header>h1 {
+        flex-basis: 200px;
+    }
+
+    h1 {
+        justify-content: center;
+    }
+
+    nav {
+        flex-flow: column wrap;
+        width: 90vw;
+    }
+
+
+nav>a {
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+}
+}
